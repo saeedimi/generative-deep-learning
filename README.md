@@ -136,30 +136,6 @@ This notebook introduces modern autoencoder architectures for unsupervised repre
 
 This notebook explores **Generative Adversarial Networks (GANs)** for realistic image synthesis using PyTorch. It begins by examining the limitations of reconstruction-based autoencoders for image generation before introducing the adversarial learning framework. The notebook implements both standard GANs and Conditional GANs (cGANs), demonstrating how adversarial training enables the generation of high-quality synthetic images from random latent vectors and class-conditioned inputs.
 
-### Topics Covered
-
-- Generative Adversarial Networks (GANs)
-- Conditional GANs (cGANs)
-- Generator networks
-- Discriminator networks
-- Adversarial learning
-- Latent space sampling
-- Image synthesis
-- Conditional image generation
-- GAN training challenges
-- MNIST dataset
-
-### Notebook
-
-`notebooks/02_gan.ipynb`
-
----
-## Notebook 2 — Generative Adversarial Networks (GANs)
-
-### Overview
-
-This notebook explores **Generative Adversarial Networks (GANs)** for realistic image synthesis using PyTorch. It begins by examining the limitations of reconstruction-based autoencoders for image generation before introducing the adversarial learning framework. The notebook implements both standard GANs and Conditional GANs (cGANs), demonstrating how adversarial training enables the generation of high-quality synthetic images from random latent vectors and class-conditioned inputs.
-
 <p align="center">
   <img src="Images/Gans.jpg" width="700">
 </p>
@@ -182,6 +158,29 @@ This notebook explores **Generative Adversarial Networks (GANs)** for realistic 
 ### Notebook
 
 `notebooks/02_gan.ipynb`
+
+---
+
+## Notebook 3 — Adversarial Attacks
+
+### Overview
+
+This notebook explores adversarial attacks on deep neural networks by generating carefully crafted perturbations that cause image classifiers to produce incorrect predictions. It highlights the importance of robustness and security in deep learning models.
+
+### Topics Covered
+
+- Adversarial examples
+- Fast Gradient Sign Method (FGSM)
+- Model robustness
+- Gradient-based attacks
+- Perturbation analysis
+- Classification robustness
+- Neural network security
+
+### Notebook
+
+`notebooks/03_adversarial_attacks.ipynb`
+
 ---
 
 ## Notebook 4 — Generative Modeling
