@@ -14,10 +14,11 @@ This repository contains practical generative deep learning projects built with 
 
 # ✨ Project Highlights
 
-- Autoencoders for unsupervised representation learning
+- Autoencoders and Variational Autoencoders (VAEs)
 - Convolutional Autoencoders
 - Generative Adversarial Networks (GANs)
-- Image generation from learned latent representations
+- Conditional GANs (cGANs)
+- Image colorization using CNNs and GANs
 - Adversarial attack techniques for evaluating model robustness
 - GPU-ready training pipelines
 - Well-documented notebooks suitable for learning and experimentation
@@ -26,7 +27,7 @@ This repository contains practical generative deep learning projects built with 
 
 # 📚 Topics Covered
 
-- Autoencoders
+- Convolutional Autoencoder
 - Convolutional Autoencoders
 - Latent space representation learning
 - Image reconstruction
@@ -39,6 +40,8 @@ This repository contains practical generative deep learning projects built with 
 - PyTorch implementation
 - GPU acceleration with CUDA
 - Deep learning best practices
+- Variational Autoencoders (VAEs)
+- Conditional GANs (cGANs)
 
 ---
 
@@ -67,12 +70,15 @@ generative-deep-learning-pytorch/
 │   ├── 01_autoencoder.ipynb
 │   ├── 02_gan.ipynb
 │   ├── 03_adversarial_attacks.ipynb
-│   └── 04_generative_modeling.ipynb
+│   └── 04_image_colorization.ipynb
 │
 ├── Images/
-│   ├── autoencoder_overview.png
-│   ├── gan.png
-│   └── adversarial_attack.png
+│   ├── Colorization.jpg
+│   ├── ColorizationGANs.png
+│   ├── ColorizationVAEs.png
+│   ├── Gans.jpg
+│   ├── Adversarial_Attacks.jpg
+│   └── autoencoder_overview.png
 │
 └── models/
 ```
@@ -140,7 +146,7 @@ This notebook explores **Generative Adversarial Networks (GANs)** for realistic 
   <img src="Images/Gans.jpg" width="700">
 </p>
 
-*Figure 2. Generative Adversarial Networks consist of a Generator that synthesizes images from random latent vectors and a Discriminator that learns to distinguish generated images from real images.*
+* Generative Adversarial Networks consist of a Generator that synthesizes images from random latent vectors and a Discriminator that learns to distinguish generated images from real images.*
 
 ### Topics Covered
 
@@ -186,25 +192,55 @@ This notebook investigates adversarial attacks against deep neural networks usin
 
 ---
 
-## Notebook 4 — Generative Modeling
+## Notebook 4 — Image Colorization with CNNs and Conditional GANs
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+<img src="Images/ColorizationVAEs.png" width="450">
+
+**Part A:** CNN-Based Image Colorization (Encoder–Decoder & U-Net)
+
+</td>
+
+<td align="center" width="50%">
+
+<img src="Images/ColorizationGANs.png" width="450">
+
+**Part B:** Conditional GAN (cGAN) for Image Colorization
+
+</td>
+</tr>
+</table>
 
 ### Overview
 
-This notebook explores advanced generative modeling techniques for learning data distributions and generating synthetic samples. It demonstrates how deep neural networks can model complex visual data through probabilistic and generative learning approaches.
+This notebook presents an end-to-end image colorization project implemented in **PyTorch**, bringing together the concepts introduced throughout the previous notebooks. It explores two complementary deep learning approaches for predicting realistic color images from grayscale inputs.
+
+**Part A** formulates image colorization as a supervised image-to-image translation problem using convolutional encoder–decoder networks and U-Net architectures with skip connections.
+
+**Part B** extends this approach by implementing a **Conditional Generative Adversarial Network (cGAN)**, where a generator learns to produce realistic color images while a discriminator encourages visually plausible outputs through adversarial training.
+
+Together, these two approaches demonstrate both reconstruction-based and adversarial methods for image colorization.
 
 ### Topics Covered
 
-- Deep generative models
-- Image generation
-- Latent variable models
-- Representation learning
-- Sampling techniques
-- Synthetic data generation
-- Deep learning workflows
+- Image colorization
+- Image-to-image translation
+- Convolutional Neural Networks (CNNs)
+- Encoder–Decoder architectures
+- U-Net with skip connections
+- Image regression
+- Conditional GANs (cGANs)
+- Generator and Discriminator architectures
+- Adversarial learning
+- CIFAR-10 dataset
+- Deep learning with PyTorch
 
 ### Notebook
 
-`notebooks/04_generative_modeling.ipynb`
+`notebooks/04_image_colorization.ipynb`
 
 ---
 
@@ -215,10 +251,26 @@ Throughout this repository, I explore how to:
 - Build autoencoders for unsupervised representation learning.
 - Learn compact latent representations of image data.
 - Reconstruct images using encoder-decoder architectures.
-- Generate realistic synthetic images using GANs.
+- Train Generative Adversarial Networks (GANs) and Conditional GANs (cGANs) for image synthesis and image-to-image translation.
 - Evaluate neural network robustness using adversarial attacks.
 - Understand modern generative deep learning techniques.
 - Develop complete generative AI workflows using PyTorch.
+
+---
+
+
+# 📈 Key Learning Outcomes
+
+This repository demonstrates practical implementations of:
+
+- Fully Connected Autoencoders
+- Convolutional Autoencoders
+- Variational Autoencoders (VAEs)
+- Generative Adversarial Networks (GANs)
+- Conditional GANs (cGANs)
+- Adversarial attacks on deep neural networks
+- Image colorization using CNNs and GANs
+- Image-to-image translation
 
 ---
 
@@ -258,10 +310,9 @@ Open the notebooks in numerical order:
 ---
 
 # ⭐ About
+This repository showcases practical implementations of modern generative deep learning techniques using PyTorch. Starting from representation learning with autoencoders and variational autoencoders, it progresses through generative adversarial networks, adversarial robustness, and concludes with an end-to-end image colorization project using both encoder–decoder networks and Conditional GANs.
 
-This repository showcases practical **Generative Deep Learning** projects developed with **PyTorch**. It demonstrates modern techniques for unsupervised representation learning, image generation, and neural network robustness through reproducible, well-documented implementations.
-
-The notebooks have been reorganized and modernized to improve readability, reproducibility, and compatibility with current versions of PyTorch and Python.
+The notebooks have been reorganized and modernized to improve readability, reproducibility, and compatibility with recent versions of PyTorch and Python.
 
 ---
 
