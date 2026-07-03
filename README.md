@@ -79,30 +79,54 @@ generative-deep-learning-pytorch/
 
 ---
 
+
 # 📖 Notebooks
 
-## Notebook 1 — Autoencoders with PyTorch
 
-![Autoencoder Architecture](http://kvfrans.com/content/images/2016/08/vae.jpg)
+## Notebook 1 — Autoencoders and Variational Autoencoders
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+<img src="Images/Colorization.jpg" width="420">
+
+**Colorization using Autoencoders**
+
+</td>
+
+<td align="center" width="50%">
+
+<img src="http://kvfrans.com/content/images/2016/08/vae.jpg" width="420">
+
+**Variational Autoencoder (VAE)**
+
+</td>
+</tr>
+</table>
 
 ### Overview
 
-This notebook introduces fully connected and convolutional autoencoders for unsupervised representation learning using PyTorch. It demonstrates how neural networks learn compact latent representations, reconstruct images, and perform feature learning through encoder-decoder architectures.
+This notebook introduces modern autoencoder architectures for unsupervised representation learning using PyTorch. It explores fully connected autoencoders, convolutional autoencoders, and variational autoencoders (VAEs), demonstrating how neural networks learn compact latent representations, reconstruct images, and generate new samples from learned probability distributions.
 
 ### Topics Covered
 
 - Fully Connected Autoencoders
 - Convolutional Autoencoders
-- Latent space representations
+- Variational Autoencoders (VAEs)
+- Encoder–Decoder architectures
+- Latent space representation learning
 - Image reconstruction
+- Image generation
 - Transpose convolutions
-- Reconstruction loss
+- KL-divergence loss
 - MNIST dataset
-- Representation learning
+- Unsupervised learning
 
 ### Notebook
 
 `notebooks/01_autoencoder.ipynb`
+
 
 ---
 
