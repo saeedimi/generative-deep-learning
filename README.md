@@ -2,7 +2,7 @@
 
 A collection of practical **Generative Deep Learning** projects implemented using **PyTorch**. This repository explores representation learning, synthetic image generation, and model robustness through Autoencoders, Generative Adversarial Networks (GANs), adversarial attacks, and modern generative modeling techniques. Each notebook has been reorganized, documented, and expanded to demonstrate practical deep learning workflows for generative AI.
 
-![Autoencoder Architecture](http://kvfrans.com/content/images/2016/08/vae.jpg)
+
 
 ---
 
@@ -134,45 +134,54 @@ This notebook introduces modern autoencoder architectures for unsupervised repre
 
 ### Overview
 
-This notebook demonstrates the implementation of Generative Adversarial Networks (GANs) using PyTorch. It explores adversarial training between generator and discriminator networks to synthesize realistic images from random latent vectors.
+This notebook explores **Generative Adversarial Networks (GANs)** for realistic image synthesis using PyTorch. It begins by examining the limitations of reconstruction-based autoencoders for image generation before introducing the adversarial learning framework. The notebook implements both standard GANs and Conditional GANs (cGANs), demonstrating how adversarial training enables the generation of high-quality synthetic images from random latent vectors and class-conditioned inputs.
 
 ### Topics Covered
 
-- Generative Adversarial Networks
-- Generator architecture
-- Discriminator architecture
-- Adversarial training
+- Generative Adversarial Networks (GANs)
+- Conditional GANs (cGANs)
+- Generator networks
+- Discriminator networks
+- Adversarial learning
 - Latent space sampling
-- Synthetic image generation
-- Training stability
 - Image synthesis
+- Conditional image generation
+- GAN training challenges
+- MNIST dataset
 
 ### Notebook
 
 `notebooks/02_gan.ipynb`
 
 ---
-
-## Notebook 3 — Adversarial Attacks
+## Notebook 2 — Generative Adversarial Networks (GANs)
 
 ### Overview
 
-This notebook explores adversarial attacks on deep neural networks by generating carefully crafted perturbations that cause image classifiers to produce incorrect predictions. It highlights the importance of robustness and security in deep learning models.
+This notebook explores **Generative Adversarial Networks (GANs)** for realistic image synthesis using PyTorch. It begins by examining the limitations of reconstruction-based autoencoders for image generation before introducing the adversarial learning framework. The notebook implements both standard GANs and Conditional GANs (cGANs), demonstrating how adversarial training enables the generation of high-quality synthetic images from random latent vectors and class-conditioned inputs.
+
+<p align="center">
+  <img src="Images/Gans.jpg" width="700">
+</p>
+
+*Figure 2. Generative Adversarial Networks consist of a Generator that synthesizes images from random latent vectors and a Discriminator that learns to distinguish generated images from real images.*
 
 ### Topics Covered
 
-- Adversarial examples
-- Fast Gradient Sign Method (FGSM)
-- Model robustness
-- Gradient-based attacks
-- Perturbation analysis
-- Classification robustness
-- Neural network security
+- Generative Adversarial Networks (GANs)
+- Conditional GANs (cGANs)
+- Generator networks
+- Discriminator networks
+- Adversarial learning
+- Latent space sampling
+- Image synthesis
+- Conditional image generation
+- GAN training challenges
+- MNIST dataset
 
 ### Notebook
 
-`notebooks/03_adversarial_attacks.ipynb`
-
+`notebooks/02_gan.ipynb`
 ---
 
 ## Notebook 4 — Generative Modeling
