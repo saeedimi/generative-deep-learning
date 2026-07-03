@@ -91,7 +91,7 @@ generative-deep-learning-pytorch/
 
 <img src="Images/Colorization.jpg" width="420">
 
-**Colorization using Autoencoders**
+**Autoencoders**
 
 </td>
 
