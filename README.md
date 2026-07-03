@@ -161,21 +161,24 @@ This notebook explores **Generative Adversarial Networks (GANs)** for realistic 
 
 ---
 
-## Notebook 3 — Adversarial Attacks
+## Notebook 3 — Adversarial Attacks on Deep Neural Networks
 
 ### Overview
 
-This notebook explores adversarial attacks on deep neural networks by generating carefully crafted perturbations that cause image classifiers to produce incorrect predictions. It highlights the importance of robustness and security in deep learning models.
+This notebook investigates adversarial attacks against deep neural networks using PyTorch. It demonstrates how small, carefully optimized perturbations can cause image classifiers to make incorrect predictions, highlighting important challenges in AI robustness and model security.
+
+![Adversarial Attacks](Images/Adversarial_Attacks.jpg)
 
 ### Topics Covered
 
 - Adversarial examples
-- Fast Gradient Sign Method (FGSM)
-- Model robustness
-- Gradient-based attacks
-- Perturbation analysis
-- Classification robustness
-- Neural network security
+- Targeted adversarial attacks
+- Gradient-based optimization
+- Adversarial perturbations
+- Neural network robustness
+- Model security
+- Visualization of adversarial examples
+- PyTorch implementation
 
 ### Notebook
 
